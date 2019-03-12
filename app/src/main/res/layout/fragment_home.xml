@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="WISATA"
+        android:id="@+id/txtwisata"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtnmwisata"
+        android:layout_below="@+id/txtwisata"
+        android:hint="Nama Wisata" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edttmptwis"
+        android:layout_below="@+id/edtnmwisata"
+        android:hint="Tempat Wisata" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtdeswis"
+        android:layout_below="@+id/edttmptwis"
+        android:hint="Deskripsi" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtdeswis"
+        android:id="@+id/edthrgwisata"
+        android:hint="Harga"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsavewisata"
+        android:layout_below="@+id/edthrgwisata"
+        android:text="Save"/>
+
+</RelativeLayout>

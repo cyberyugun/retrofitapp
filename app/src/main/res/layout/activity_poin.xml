@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PoinActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txthasil"
+                    android:text="HASIL"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtscore"
+                    android:text="SCORE ANDA"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/txthasil"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtnilaian"
+                    android:text="NILAI ANDA:"
+                    android:textSize="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/txtscore"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtnilai"
+                    android:text=""
+                    android:textSize="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:layout_below="@+id/txtnilaian"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="520px"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:text="1.A 2.A 3.A 4.B 5.B"
+                android:textSize="15dp"
+                android:layout_centerHorizontal="true"
+                android:textColor="#000000"
+                android:layout_alignLeft="@+id/txthasil"
+                android:layout_alignRight="@+id/txthasil"
+                android:layout_below="@+id/txtnilai"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center">
+
+
+                <TextView
+                    android:layout_width="520px"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textbenar"
+                    android:text="1.A 2.A 3.A 4.B 5.B"
+                    android:textSize="15dp"
+                    android:layout_centerHorizontal="true"
+                    android:textColor="#000000"
+                    android:layout_alignLeft="@+id/txthasil"
+                    android:layout_alignRight="@+id/txthasil"
+                    android:layout_below="@+id/text"
+                    android:layout_marginTop="50dp"
+                    android:gravity="center"
+                    />
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textbenar"
+                    android:text="SELESAI"
+                    android:onClick="selesai"
+                    android:id="@+id/btnselesai"
+                    tools:ignore="OnClick" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
