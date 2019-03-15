@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/idwisata"
+        android:text="idwisata"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/namawisata"
+        android:text="nama wisata"
+        android:layout_below="@+id/idwisata"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tempatwisata"
+        android:text="tempat wisata"
+        android:layout_below="@+id/namawisata"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/deskripsi"
+        android:text="deskripsi"
+        android:layout_below="@+id/tempatwisata" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/harga"
+        android:text="harga"
+        android:layout_below="@+id/deskripsi"/>
+</RelativeLayout>
