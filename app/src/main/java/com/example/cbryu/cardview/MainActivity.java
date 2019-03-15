@@ -9,7 +9,7 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-CardView ca,cb,cc;
+CardView ca,cb,cc,cd;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +40,15 @@ CardView ca,cb,cc;
             public void onClick(View v) {
                 Intent intentc=new Intent(MainActivity.this,SoalActivity.class);
                 startActivity(intentc);
+            }
+        });
+
+        cd=findViewById(R.id.cdd);
+        cd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentd=new Intent(MainActivity.this,WisataViewActivity.class);
+                startActivity(intentd);
             }
         });
     }
