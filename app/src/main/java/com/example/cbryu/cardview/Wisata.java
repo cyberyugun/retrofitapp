@@ -8,7 +8,16 @@ public class Wisata {
     @SerializedName("tempatwisata") private  String Tempatwisata;
     @SerializedName("deskripsi") private  String Deskripsi;
     @SerializedName("harga") private  String Harga;
+@SerializedName("value") private String Value;
+    @SerializedName("message") private String Message;
 
+    public String getValue() {
+        return Value;
+    }
+
+    public String getMessage() {
+        return Message;
+    }
 
     public String getIdwisata() {
         return Idwisata;

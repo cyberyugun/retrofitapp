@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 import static com.example.cbryu.cardview.UtilsApi.BASE_URL_API;
 
 public class Apiclientd {
-    public static final String BASE_URL_API="http://192.168.137.1/mhs/";
+    public static final String BASE_URL_API="http://192.168.100.205/mhs/";
     private  static Retrofit retrofit;
     public static Retrofit getClientd(){
 //        HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();

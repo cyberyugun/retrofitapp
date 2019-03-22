@@ -1,5 +1,8 @@
 package com.example.cbryu.cardview;
 
+import android.renderscript.Sampler.Value;
+
+
 import java.util.List;
 
 import okhttp3.ResponseBody;
@@ -37,4 +40,21 @@ public interface ApiInterface {
     @GET("tbl_wisata.php")
     Call<List<Wisata>> getwisata(@Query("key") String keyword);
 
+
+    @GET("hapus.php")
+    Call<Value> gethapuswisata(@Field("idwisata") String idwisata);
+
+
+    @FormUrlEncoded
+    @POST("update_wisata.php")
+    Call<ResponseBody> UbahWisata(@Field("idwisata") String idwisata,
+                                  @Field("namawisata") String namawisata,
+                                         @Field("tempatwisata") String tempatwisata,
+                                         @Field("deskripsi") String deskripsi,
+                                         @Field("harga") String harga );
+
+
+    @FormUrlEncoded
+    @POST("delete_wisata.php")
+    Call<ResponseBody> deletewisata(@Field("idwisata") String idwisata);
 }

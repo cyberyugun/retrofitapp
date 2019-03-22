@@ -14,6 +14,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -144,7 +145,7 @@ public class GalleryActivity extends AppCompatActivity {
     private void uploadImagesToServer() {
         if (InternetConnection.checkConnection(GalleryActivity.this)) {
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.137.1/mhs/")
+                    .baseUrl("http://192.168.100.205/mhs/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
