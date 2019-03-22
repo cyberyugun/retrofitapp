@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="UPDATE WISATA"
+        android:id="@+id/txtwisataa"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtnmwisataa"
+        android:layout_below="@+id/txtwisataa"
+        android:hint="Nama Wisata" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edttmptwisa"
+        android:layout_below="@+id/edtnmwisataa"
+        android:hint="Tempat Wisata" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtdeswisa"
+        android:layout_below="@+id/edttmptwisa"
+        android:hint="Deskripsi" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtdeswisa"
+        android:id="@+id/edthrgwisataa"
+        android:hint="Harga"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnsavewisataa"
+        android:layout_below="@+id/edthrgwisataa"
+        android:text="Update"/>
+
+</RelativeLayout>
